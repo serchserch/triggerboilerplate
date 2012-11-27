@@ -1,0 +1,69 @@
+/* http://johanbrook.com/design/css/debugging-css-media-queries/ */
+body.debug:before {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 99;
+	display: block; 
+	padding: 1em;
+	color: white;
+	background: hsl(0, 50%, 50%);
+	content: "No media query active";
+	text-align: center;
+	font-weight: normal;
+	opacity: .3;
+}
+@media (max-width: 480px) {
+	body.debug:before {
+		background: hsl(60, 50%, 50%);
+		content: "@media (max-width: 480px)";
+	}
+}
+@media (min-width: 481px) and (max-width: 767px) {
+	body.debug:before {
+		background: hsl(120, 50%, 50%);
+		content: "@media (min-width: 481px) and (max-width: 767px)";
+	}
+}
+@media (min-width: 768px) and (max-width: 979px) {
+	body.debug:before {
+		background: hsl(180, 50%, 50%);
+		content: "@media (min-width: 768px) and (max-width: 979px)";
+	}
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+	body.debug:before {
+		background: hsl(240, 50%, 50%);
+		content: "@media (min-width: 980px) and (max-width: 1199px)";
+	}
+}
+@media (min-width: 1200px) {
+	body.debug:before {
+		background: hsl(300, 50%, 50%);
+		content: "@media (min-width: 1200px)";
+	}
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	   only screen and (min--moz-device-pixel-ratio: 1.5),
+	   only screen and (min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+
+	body.debug:after {
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 99;
+		display: block;
+		background: #808000;
+		color: white;
+		padding: .5em;
+		font-size: .85em;
+		content: "HiDPI\Amode";
+		white-space: pre;
+		text-align: right;
+		font-weight: normal;
+		opacity: .3;
+	}
+}

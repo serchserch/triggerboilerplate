@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>      <html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10"> <![endif]-->
+<!--[if IEMobile 7 ]>  <html class="no-js iem7"> <![endif]-->
+<!--[if gt IE 9 & ((gt IEMobile 7)|!(IEMobile))]><!--> <html class="no-js"> <!--<![endif]-->
+
+	<head>
+
+		<meta charset="utf-8"><!-- has to come early http://blog.php-security.org/archives/38-Wikipedia-UTF-7-XSSCross-Site-Scripting-Hole-Plugged.html -->
+
+		<!--
+
+                                 ._
+                              ,-'_ `-.
+                              ::".^-. `.
+                              ||<    >. \
+                              |: _, _| \ \
+                              : .'| '|  ;\`.
+                              _\ .`  '  | \ \
+                            .' `\ *-'   ;  . \
+                           '\ `. `.    /\   . \
+                         _/  `. \  \  :  `.  `.;
+                       _/ \  \ `-._  /|  `  ._/
+                      / `. `. `.   /  :    ) \
+                      `;._.  \  _.'/   \ .' .';
+                      /     .'`._.* /    .-' (
+                    .'`._  /    ; .' .-'     ;
+                    ; `._.:     |(    ._   _.'|
+                    `._   ;     ; `.-'        |
+                     |   / .-'./ .'  \ .     /:
+                     |  +.'  \ `-.   .\ *--*' ;\
+                     ;.' `. \ `.    /` `.    /  .
+                    /.L-'\_: L__..-*     \   ".  \
+                   :/ / .' `' ;   `-.     `.   \  .
+                   / /_/     /              \   ;  \
+              |  _/ /       /          \     `./    .
+            `   .  ;       /    .'      `-.   ;      \
+           --  /  /  --   ,    /           `"' \      .
+          .   .  '       /   .'                 `.     \
+             /  /    `  /   /                  |  `-.   .
+        --  .  '   \   /                         `.  `-._\
+       .   /  /       : `*.                    :   `.    `-.
+          .  '    `   |    \                    \    `-._   `-._
+     --  /  /   \     :     ;                    \              |
+   .    .  '           ;                          `.  \      :  ;
+       /  /   `       : \    \                      `. `._  /  /
+  --  .  '  \         |  `.   `.                      `-. `'  /\
+     /  .             ;         `-.              \       `-..'  ;
+ `  .  '   `          |__                     |   `.         `-._.
+_  :  /  \              ;`-.                  :     `-.           ;
+    `"  `               |   `.                 \       `*-.__.-*"' \
+' /  . \                ;_.  :`-._              `._                /
+                       /   `  . ; `"*-._                       _.-`
+                     .'"'    _;  `-.__                     _.-`     
+                     `-.__.-"         `""---...___...--**"' |       
+                                                  `.____..--'  
+
+
+						A little learning is a dang'rous thing;
+						Drink deep, or taste not the Pierian spring:
+						There shallow draughts intoxicate the brain,
+						And drinking largely sobers us again.
+						-- Alexander Pope
+
+		-->
+
+		<title></title>
+
+		<meta name="description" content="">
+		<meta name="author" content="humans.txt">
+
+		<!-- Prefetch DNS lookups. Are your visitors going here? Use their idle time wisely and precache the DNS lookups -->
+		<link rel="dns-prefetch" href="//twitter.com">
+
+		<!-- Give your visitors more options regarding which RSS Feed they want. There doesn't have to be just ONE RSS Feed ;) -->
+		<link rel="alternate" type="application/rss+xml" title="Feed 1" href="http://example.com/rss/1"/>
+		<link rel="alternate" type="application/rss+xml" title="Feed 2" href="http://example.com/rss/2"/>
+
+		<!-- Multiple (duplicate) versions of the page? Tell the search engines what version to use: -->
+		<link rel="canonical" href="http://triggerisobar.co.za"> <!-- It's better to set up correct redirects in Apache -->
+		<!-- A URL Shortener version of the page's URL goes here. Save your visitors a lot of time, and give them a short link. -->
+		<link rel="shortlink" href="http://goo.gl/2jVCE/">
+
+		<!-- Asjust this as needed -->
+		<meta name="viewport" content="width=device-width">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta http-equiv="cleartype" content="on">
+
+		<!-- http://www.seroundtable.com/archives/020870.html -->
+		<!-- Let potential crawlers know where the site's HQ is based. This doesn't have to be your home BTW. Just a company / agency HQ -->
+		<!-- Want to get your company's Coordinates from Google Maps? Open up scratchpad in Firefox and paste this in: -->
+		<!-- void(prompt('',gApplication.getMap().getCenter())); -->
+		<!-- Thank you Lifehacker -->
+		<!-- http://lifehacker.com/267361/google-mapstude?tag=software -->
+		<meta name="geo.region" content="rsa" />
+		<meta name="geo.placename" content="South Africa" />
+		<meta name="geo.position" content="x;x" />
+		<meta name="ICBM" content="x,x" />
+
+		<meta http-equiv="imagetoolbar" content="no" />
+		<meta http-equiv="MsThemeCompatible" content="no" />
+		<meta http-equiv="content-style-type" content="text/css" />
+		<meta http-equiv="content-script-type" content="text/javascript" />
+		<meta http-equiv="content-language" content="en-za" />
+
+		<link rel="contents" href="sitemap.html" title="Main Contents" type="text/html" />
+		<link rel="start" href="/" title="Introduction Page" />
+		<link rel="author" href="dev@isobar.co.za" />
+		<link rel="index" type="text/html" href="/" />
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
+
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+		<link rel="stylesheet" href="styles/base.css">
+		<link rel="stylesheet" href="styles/layout.css">
+		<link rel="stylesheet" href="styles/modules/common.css">
+		<link rel="stylesheet" href="styles/modules/helper.css">
+		<link rel="stylesheet" href="styles/debug/holmes.min.css">
+		<link rel="stylesheet" href="styles/debug/mediaqueries.css">
+
+		<script src="scripts/vendor/modernizr.min.js"></script>
+		<script>
+			yepnope({
+				test : Modernizr.mq('(only all)'),
+				nope : ['scripts/libs/respond.min.js']
+			});
+		</script>
+
+	</head>
+
+	<body class="debug">
+
+		<!--[if lt IE 8]>
+		<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+		<![endif]-->
+
+		<!-- Add your site or application content here -->
+		<p>Hello world! This is the Trigger Isobar Boilerplate.</p>
+
+		<!--[if lt IE 9]>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="scripts/vendor/jquery.min.js"><\/script>')</script>
+		<script src="scripts/vendor/selectivizr.min.js"></script>
+		<![endif]-->
+		<!--[if gt IE 8 ]><!-->
+		<script src="scripts/vendor/zepto.min.js"></script>
+		<!--<![endif]-->
+		<script src="scripts/plugins.js"></script>
+		<script src="scripts/main.js"></script>
+		<!-- <script src="scripts/vendor/mobilehelper.js"></script> -->
+
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<script>
+			var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+			g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g,s)}(document,'script'));
+		</script>
+
+	</body>
+
+</html>

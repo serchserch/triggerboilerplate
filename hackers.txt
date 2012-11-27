@@ -1,0 +1,19 @@
+This is a special place where hackers are permitted to make changes,
+well, actually only additions, appending their name, date, location,
+contact and info as they choose.
+
+Please also contact Trigger Isobar:
+dev@isobar.co.za
+So long as you didn't change anything (other than this file) or
+take information that would not be available to a regular web
+user, we will not take any punitive action against your, and would
+like to find out how you got access, so that we can tighten our
+security.
+
+1.	Name:
+	Location:
+	Date: YYYY/MM/DD
+	Contact:
+	Website:
+
+2.

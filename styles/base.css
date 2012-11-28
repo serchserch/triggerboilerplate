@@ -57,7 +57,7 @@ Base
 /*
  * 1. Sets default font family to sans-serif.
  * 2. Prevents iOS text size adjust after orientation change, without disabling
- *    user zoom.
+ *	user zoom.
  */
 
 html {
@@ -284,10 +284,10 @@ input {
 
 /*
  * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
- *    and `video` controls.
+ *	and `video` controls.
  * 2. Corrects inability to style clickable `input` types in iOS.
  * 3. Improves usability and consistency of cursor style between image-type
- *    `input` and others.
+ *	`input` and others.
  */
 
 button,
@@ -321,7 +321,7 @@ input[type="radio"] {
 /*
  * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
  * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
- *    (include `-moz` to future-proof).
+ *	(include `-moz` to future-proof).
  */
 
 input[type="search"] {
@@ -888,15 +888,15 @@ Inlined to avoid required HTTP connection: h5bp.com/r
 
 
 /* http://css-tricks.com/things-it-might-be-funuseful-to-try-the-universal-selector-on/ */
-* { 
-	-moz-box-sizing: border-box; 
-	-webkit-box-sizing: border-box; 
-	box-sizing: border-box; 
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 
 	-webkit-transition: all 0.2s ease;
-	-moz-transition:    all 0.2s ease;
-	-ms-transition:     all 0.2s ease;
-	-o-transition:      all 0.2s ease;
+	-moz-transition:	all 0.2s ease;
+	-ms-transition:	 all 0.2s ease;
+	-o-transition:	  all 0.2s ease;
 
 	background-repeat: no-repeat;
 

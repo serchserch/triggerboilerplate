@@ -1,10 +1,10 @@
 /* http://johanbrook.com/design/css/debugging-css-media-queries/ */
 body.debug:before {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	right: 0;
 	left: 0;
-	z-index: 99;
+	z-index: 99999;
 	display: block;
 	padding: 1em;
 	color: white;
@@ -54,10 +54,10 @@ body.debug:before {
 		(min-resolution: 1.5dppx) {
 
 	body.debug:after {
-		position: absolute;
+		position: fixed;
 		top: 0;
 		right: 0;
-		z-index: 99;
+		z-index: 99999;
 		display: block;
 		background: #808000;
 		color: white;

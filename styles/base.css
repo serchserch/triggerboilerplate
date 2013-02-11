@@ -899,6 +899,8 @@ Inlined to avoid required HTTP connection: h5bp.com/r
 	-o-transition:	  all 0.2s ease;
 
 	background-repeat: no-repeat;
+}
 
+body * {
 	position: relative;
 }
